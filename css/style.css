@@ -847,17 +847,53 @@ opacity: .5; }
 
     /* Header section */
 
+    #navigation.small-screen #menu-button {
+        margin-bottom: 8px;
+    }
+
+    #navigation.small-screen ul {
+        margin-top: 34px;
+    }
+
+    @media (max-width: 786px) {
+        .d-flex-header {
+            display: flex;
+            align-items: center;
+        }
+    } 
+
     @media (min-width: 786px) {
-        .navigation  ul.main-ul {
+        .navigation ul.main-ul {
             display: flex !important;
+            justify-content: center;
+            
         }
     }
 
-    @media(max-width: 992px) {
+    @media (min-width: 786px) and (max-width: 1024px) {
         .text-center-md {
             text-align: center;
         }
+
     }
+
+    @media (max-width: 786px) {
+        .log-size-md img{
+            width: 100px;
+        }
+
+        .log-size-md {
+            position: absolute;
+            top: 19px;
+        }
+    }
+
+    /* @media (max-width: 769px) {
+         .text-center-md img {
+             position: absolute;
+             top: 10px;
+         }
+    } */
 
     /* Hero Section */
 
@@ -866,4 +902,19 @@ opacity: .5; }
         background-position: 0% 0%;
         background-size: cover;
         background-attachment: fixed;
+    }
+
+    /* Contact page */
+
+    .contact-div {
+        background-image: url('../images/contact.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom bottom;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .contact-div h2,
+    .contact-div li, 
+    .contact-div a {
+        color: black!important;
     }
